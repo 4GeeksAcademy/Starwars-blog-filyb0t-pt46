@@ -1,12 +1,12 @@
+// src/components/Navbar.jsx
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
-
+const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light">
 			<div className="container">
-				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+				<Link to="/" className="navbar-brand mb-0 h1">
+					StarWarsBlog
 				</Link>
 				<div className="ml-auto">
 					<Link to="/demo">
@@ -17,3 +17,5 @@ export const Navbar = () => {
 		</nav>
 	);
 };
+
+export default Navbar;
